@@ -1,0 +1,54 @@
+.button {
+  font-size: 22px;
+  outline: none;
+  border-radius: 24px;
+  color: white;
+  border: 1px solid white;
+  background-color: black;
+  padding: 5px 25px;
+  height: 40px;
+  position: relative;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    background-color: #ff0a33;
+    transition: background-color 0.4s;
+  }
+}
+
+.disabled {
+  &:hover {
+    cursor: default;
+    background-color: gray;
+  }
+
+  background-color: gray;
+  cursor: default;
+}
+
+.spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-name: spin;
+  animation-duration: 500ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spinnerWrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

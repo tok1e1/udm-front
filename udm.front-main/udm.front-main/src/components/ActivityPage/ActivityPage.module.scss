@@ -1,0 +1,124 @@
+.yogaBody {
+  background: #f2f3f5;
+  color: #141414;
+  font-size: 14px;
+  letter-spacing: normal;
+  line-height: 150%;
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1016px;
+  padding: 0 20px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+
+.main {
+  height: 760px;
+  position: relative;
+  overflow: hidden;
+}
+
+.mainHero {
+  img {
+    background-position: bottom;
+    max-height: 90vh;
+    bottom: -30px;
+    height: 814px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.h2 {
+  font-weight: 600;
+  font-size: 72px;
+  line-height: 72px;
+}
+
+.trainingAbout {
+  display: flex;
+  gap: 30px;
+  justify-content: space-around;
+  padding: 32px;
+  background-color: #fff;
+  border-radius: 20px;
+  margin-bottom: 50px;
+}
+
+.yogaPage_traningAbout,
+.traningAboutItem {
+  align-items: start;
+  display: flex;
+}
+
+.traningAboutItem:first-child {
+  margin-right: 0;
+}
+
+.traningAboutPic {
+  margin-right: 12px;
+}
+
+.clock {
+  width: 48px;
+  height: 48px;
+}
+
+.mark {
+  width: 48px;
+  height: 48px;
+}
+
+.svgsprite {
+  display: inline-block;
+  fill: currentColor;
+  vertical-align: middle;
+}
+
+.traningAboutName {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+  color: #7e7e80;
+  margin-bottom: 2px;
+}
+
+.traningAboutDescription {
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 500;
+  color: #141414;
+}
+
+.scheduleWork {
+  background: white;
+  padding: 80px 32px 100px;
+
+  & > div {
+    max-width: 1016px;
+    margin: 0 auto;
+
+  }
+}
+
+.scheduleWrapper {
+  margin-top: 54px;
+}
+
+
+.activityDescription {
+  white-space: pre-line;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 28px;
+  margin-bottom: 50px;
+}

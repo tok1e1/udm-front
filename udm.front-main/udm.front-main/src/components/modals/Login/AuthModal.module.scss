@@ -1,0 +1,73 @@
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.2);
+  position: absolute;
+}
+
+.backdrop {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  z-index: 50;
+}
+
+.loginWrapper {
+  height: 100%;
+  overflow: auto;
+}
+
+.inputsWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.formWrapper {
+  background: #fff;
+  width: 400px;
+  border-radius: 40px;
+  padding: 40px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  box-shadow: 10px 10px 31px -3px rgba(0, 0, 0, 0.49);
+  -webkit-box-shadow: 10px 10px 31px -3px rgba(0, 0, 0, 0.49);
+}
+
+.mark {
+  position: absolute;
+  right: 40px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.loginButton {
+  margin: 16px 0;
+}
+
+.signupLink {
+  color: #ff0a33;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.error{
+  color: #ff0a33;
+}
